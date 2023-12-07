@@ -268,7 +268,9 @@ button.learn-more .button-text {
 button:hover .circle {
 	width: 100%;
 }
-
+button:hover .button-text{
+	color: #fff;
+}
 button:hover .circle .icon.arrow {
 	background: #fff;
 	transform: translate(1rem, 0);
