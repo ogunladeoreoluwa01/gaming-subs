@@ -1,12 +1,12 @@
 <!-- @format -->
-
+<!-- note to self api support needed on this section  -->
 <template>
 	<aside>
 		<div class="topicContainer">
 			<i class="fa-solid fa-bullseye"></i>
 			<h3>RECENT ARTICLES</h3>
 		</div>
-		<div class="CardContainer">
+		<router-link to="/" class="CardContainer">
 		
 			<div class="sideBarCards">
 				<img
@@ -20,7 +20,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</router-link>
 	</aside>
 </template>
 
@@ -32,14 +32,17 @@ export default {};
 aside {
 	display: flex;
 	flex-direction: column;
-	margin-left: 60%;
+	/* margin-left: 60%; */
 	border-radius: 24px;
 	width: 470px;
 	height: 1310px;
 	align-items: center;
 	justify-content: flex-start;
 }
-
+a{
+	text-decoration: none;
+	color: #19250a;
+}
 .topicContainer {
 	width: 400px;
 	border-radius: 12px;
@@ -134,4 +137,5 @@ img {
 	align-items: center;
 	justify-content: space-between;
 }
+
 </style>
