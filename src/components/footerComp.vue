@@ -152,8 +152,8 @@ footer {
 }
 .logo h3 {
 	font-size: 22px;
-	font-style: italic;
-	font-weight: 800;
+	font-style: oblique;
+	font-weight: 900;
 }
 .logo img {
 	width: 36px;

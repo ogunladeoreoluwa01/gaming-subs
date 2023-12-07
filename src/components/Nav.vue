@@ -149,9 +149,10 @@ ul {
 }
 
 .nav-img h1 {
-	font-size: 25px;
-	font-style: italic;
-	font-weight: 750;
+	font-size: 30px;
+	font-weight: 900;
+	font-display: bold;
+	font-style: oblique;
 }
 
 .nav-img span {
