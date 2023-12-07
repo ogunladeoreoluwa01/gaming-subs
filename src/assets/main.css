@@ -1,0 +1,35 @@
+/** @format */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #fff;
+	color: #19250a;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+  font-weight: 700;
+}
+h2 {
+	font-size: 32px;
+	
+}
+h3 {
+	font-size: 24px;
+
+}
+h4 {
+	font-size: 20px;
+	
+}
+h5 {
+	font-size: 18px;
+	
+}
+p {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+
