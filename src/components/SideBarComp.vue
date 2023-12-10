@@ -21,6 +21,7 @@
 				</div>
 			</div>
 		</router-link>
+		
 	</aside>
 </template>
 
@@ -35,7 +36,7 @@ aside {
 	/* margin-left: 60%; */
 	border-radius: 24px;
 	width: 470px;
-	height: 1310px;
+	height: fit-content;
 	align-items: center;
 	justify-content: flex-start;
 }
@@ -69,7 +70,7 @@ span {
 	width: 400px;
 	border-radius: 12px;
 	background-color: rgba(25, 37, 10, 0.2);
-	margin-top: 20px;
+	margin-top: 10px;
 	padding: 20px;
 	gap: 20px;
 	align-self: flex-start;
