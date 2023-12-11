@@ -4,11 +4,10 @@
 	<div class="heroSect">
 		<swiper
 			:spaceBetween="30"
-            :loop="true"
-          
+			:loop="true"
 			:centeredSlides="true"
 			:autoplay="{
-				delay: 	10000,
+				delay: 10000,
 				disableOnInteraction: false,
 			}"
 			:pagination="{
@@ -17,44 +16,66 @@
 			:navigation="true"
 			:modules="modules"
 			class="mySwiper">
-			<swiper-slide
-				>
-               <div to="" class="heroCarosel">
+			<swiper-slide>
+				<div
+					class="heroCarosel"
+					style="
+						background: linear-gradient(
+								69deg,
+								rgba(0, 0, 0, 0.7) 0%,
+								rgba(0, 0, 0, 0.5) 50%,
+								rgba(0, 0, 0, 0.2) 100%
+							),
+							url('killjoy.png');
+					">
 					<div class="caroselInfo">
 						<div class="carotext">
-							<router-link to="" ><h1 class="mainText">VALORANT AGENT CYPHER: LORE & BACKSTORY</h1></router-link>
+							<router-link to=""
+								><h1 class="mainText">
+									VALORANT AGENT CYPHER: LORE & BACKSTORY
+								</h1></router-link
+							>
 							<p class="subText">
-								<span class="green">Alex Gordons</span>, 23 Dec, 2022
+								<router-link
+									to=""
+									id="green"
+									>Alex Gordons</router-link
+								>, 23 Dec, 2022
 							</p>
 						</div>
 					</div>
 				</div></swiper-slide
 			>
-            <swiper-slide
-				><div class="heroCarosel">
+			<swiper-slide>
+				<div
+					class="heroCarosel"
+					style="
+						background: linear-gradient(
+								69deg,
+								rgba(0, 0, 0, 0.7) 0%,
+								rgba(0, 0, 0, 0.5) 50%,
+								rgba(0, 0, 0, 0.2) 100%
+							),
+							url('killjoy.png');
+					">
 					<div class="caroselInfo">
 						<div class="carotext">
-							<h1 class="mainText">VALORANT AGENT CYPHER: LORE & BACKSTORY</h1>
+							<router-link to=""
+								><h1 class="mainText">
+									VALORANT AGENT CYPHER: LORE & BACKSTORY
+								</h1></router-link
+							>
 							<p class="subText">
-								<span class="green">Alex Gordons</span>, 23 Dec, 2022
+								<router-link
+									to=""
+									id="green"
+									>Alex Gordons</router-link
+								>, 23 Dec, 2022
 							</p>
 						</div>
 					</div>
 				</div></swiper-slide
 			>
-            <swiper-slide
-				><div class="heroCarosel">
-					<div class="caroselInfo">
-						<div class="carotext">
-							<h1 class="mainText">VALORANT AGENT CYPHER: LORE & BACKSTORY</h1>
-							<p class="subText">
-								<span class="green">Alex Gordons</span>, 23 Dec, 2022
-							</p>
-						</div>
-					</div>
-				</div></swiper-slide
-			>
-			
 		</swiper>
 	</div>
 </template>
@@ -86,14 +107,12 @@ export default {
 </script>
 
 <style scoped>
-
 .swiper {
 	width: 1121px;
 	height: 637.45px;
 }
-.mySwiper{
-   
-    border-radius: 24px;
+.mySwiper {
+	border-radius: 24px;
 }
 
 .swiper-slide {
@@ -131,7 +150,6 @@ export default {
 	justify-content: center;
 	align-content: center;
 	align-items: center;
-	
 }
 
 .heroCarosel {
@@ -141,13 +159,6 @@ export default {
 	padding: 20px;
 	width: 1121px;
 	height: 637.45px;
-	background: linear-gradient(
-			69deg,
-			rgba(0, 0, 0, 0.7) 0%,
-			rgba(0, 0, 0, 0.5) 50%,
-			rgba(0, 0, 0, 0.2) 100%
-		),
-		url(../assets/killjoy.png);
 }
 .carotext {
 	align-self: flex-end;
@@ -156,7 +167,7 @@ export default {
 	color: #fff;
 	display: flex;
 	align-items: flex-start;
-    justify-content: flex-start;
+	justify-content: flex-start;
 	padding: 50px;
 	gap: 150px;
 	width: 1000px;
@@ -179,9 +190,10 @@ export default {
 	padding-top: 5px;
 	border-left: 5px solid transparent;
 }
-.green {
+#green {
 	color: #97f123;
 	font-weight: 700;
+	text-decoration: underline;
 }
 
 .navBtns {
@@ -229,9 +241,9 @@ export default {
 	border-radius: 10px;
 	border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.carotext a{
-    text-decoration: none;
-    color: #fff;
+.carotext a {
+	text-decoration: none;
+	color: #fff;
 }
 
 .small {
@@ -240,48 +252,47 @@ export default {
 }
 /* lg */
 @media (max-width: 1270px) {
-.heroSect{
-transform: scale(0.9);
-}
+	.heroSect {
+		transform: scale(0.9);
+	}
 }
 @media (max-width: 1170px) {
-.heroSect{
-transform: scale(0.9);
-align-self: center;
-margin: 0;
-}
+	.heroSect {
+		transform: scale(0.9);
+		align-self: center;
+		margin: 0;
+	}
 }
 @media (max-width: 1024px) {
-    .heroSect{
-transform: scale(0.8);
-align-self: center;
-margin: 0;
-}
+	.heroSect {
+		transform: scale(0.8);
+		align-self: center;
+		margin: 0;
+	}
 }
 
 /* md */
 @media (max-width: 768px) {
-    .heroSect{
-transform: scale(0.7);
-align-self: center;
-margin: 0;
-}
+	.heroSect {
+		transform: scale(0.7);
+		align-self: center;
+		margin: 0;
+	}
 }
 
 /* sm */
 @media (max-width: 640px) {
-    .heroSect{
-transform: scale(0.5);
-align-self: center;
-margin: 0;
-}
+	.heroSect {
+		transform: scale(0.5);
+		align-self: center;
+		margin: 0;
+	}
 }
 @media (max-width: 415px) {
-    .heroSect{
-transform: scale(0.4);
-align-self: center;
-margin: 0;
+	.heroSect {
+		transform: scale(0.4);
+		align-self: center;
+		margin: 0;
+	}
 }
-}
-
 </style>
